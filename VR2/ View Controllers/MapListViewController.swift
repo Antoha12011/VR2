@@ -1,9 +1,4 @@
-//
-//  MapListViewController.swift
-//  VR2
-//
-//  Created by Anton Pavlov on 14.04.2022.
-//
+
 
 import UIKit
 

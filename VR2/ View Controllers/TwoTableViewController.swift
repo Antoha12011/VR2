@@ -1,9 +1,3 @@
-//
-//  TwoTableViewController.swift
-//  VR2
-//
-//  Created by Anton Pavlov on 11.04.2022.
-//
 
 import UIKit
 
