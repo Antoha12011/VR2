@@ -14,7 +14,6 @@
 		44534A232801EEE700C0E247 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44534A222801EEE700C0E247 /* Assets.xcassets */; };
 		44534A262801EEE700C0E247 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44534A242801EEE700C0E247 /* LaunchScreen.storyboard */; };
 		4470C1AC2808A5C0000FDFB3 /* MapListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4470C1AB2808A5C0000FDFB3 /* MapListViewController.swift */; };
-		4497566C28045EB500040D54 /* ThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4497566B28045EB500040D54 /* ThreeViewController.swift */; };
 		44975674280464D800040D54 /* TwoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44975673280464D800040D54 /* TwoTableViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -28,7 +27,6 @@
 		44534A252801EEE700C0E247 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		44534A272801EEE700C0E247 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4470C1AB2808A5C0000FDFB3 /* MapListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapListViewController.swift; sourceTree = "<group>"; };
-		4497566B28045EB500040D54 /* ThreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeViewController.swift; sourceTree = "<group>"; };
 		44975673280464D800040D54 /* TwoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -74,7 +72,6 @@
 		4497566428045A9700040D54 /*  View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				4497566B28045EB500040D54 /* ThreeViewController.swift */,
 				44975673280464D800040D54 /* TwoTableViewController.swift */,
 				44534A1D2801EEE600C0E247 /* MapViewController.swift */,
 				4470C1AB2808A5C0000FDFB3 /* MapListViewController.swift */,
@@ -167,7 +164,6 @@
 				44975674280464D800040D54 /* TwoTableViewController.swift in Sources */,
 				4470C1AC2808A5C0000FDFB3 /* MapListViewController.swift in Sources */,
 				44534A1C2801EEE600C0E247 /* SceneDelegate.swift in Sources */,
-				4497566C28045EB500040D54 /* ThreeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
