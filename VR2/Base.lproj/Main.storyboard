@@ -55,6 +55,11 @@
                                 <state key="normal" title="Список комплексов">
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <segue destination="nbN-KP-BNV" kind="show" id="ywc-Ua-qSz"/>
                                 </connections>
@@ -76,7 +81,7 @@
         <!--Map List View Controller-->
         <scene sceneID="oGA-hS-1U9">
             <objects>
-                <tableViewController id="nbN-KP-BNV" customClass="MapListViewController" customModule="VR2" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController modalPresentationStyle="fullScreen" id="nbN-KP-BNV" customClass="MapListViewController" customModule="VR2" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="pZr-Nb-2Eq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -193,7 +198,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="agQ-ij-zN5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-849" y="2056"/>
+            <point key="canvasLocation" x="-849" y="2098"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="7ok-cJ-QXU">

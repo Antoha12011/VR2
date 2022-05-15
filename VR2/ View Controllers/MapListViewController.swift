@@ -5,7 +5,8 @@ import UIKit
 class MapListViewController: UITableViewController, UISearchBarDelegate {
 
     
-let data = ["Гарантия на Карякина", "Лучший", "Москва", "Кубанский", "Тургенев", "Большой", "Ревьера", "Оскар" , "Сказка", "Оникс"]
+    let complex = ["Гарантия на Карякина", "Лучший", "Москва", "Кубанский", "Тургенев", "Большой", "Ревьера", "Оскар" , "Сказка", "Оникс"]
+    .sorted(by: <)
     
     
     
@@ -19,7 +20,7 @@ let data = ["Гарантия на Карякина", "Лучший", "Моск�
 
         searchBar.delegate = self
         
-        filteredData = data
+        filteredData = complex
         
     }
 
@@ -42,18 +43,19 @@ let data = ["Гарантия на Карякина", "Лучший", "Моск�
         
         return cello
     }
+
+                                                    // Этот код отвечает за работу поисковика
     
-    // Этот код отвечает за работу поисковика
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         
         
     filteredData = []
         
         if searchText == "" {
-         filteredData = data
+         filteredData = complex
         }
         else {
-        for list in data {
+        for list in complex {
             
             if list.lowercased().contains(searchText.lowercased()) {
             filteredData.append(list)

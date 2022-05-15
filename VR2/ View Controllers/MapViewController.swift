@@ -81,7 +81,7 @@ class MapViewController: UIViewController {
     func setupManager(){
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
-}
+    }
     
     func checkAutorization(){
         switch CLLocationManager.authorizationStatus() {
@@ -90,15 +90,15 @@ class MapViewController: UIViewController {
         case .authorizedWhenInUse:
             mapView.showsUserLocation = true
             locationManager.startUpdatingLocation()
-        break
+            break
         case .denied:
             showAllertLocation(title: "Вы запретили использование местоположения", message: "Хоите это изменить?", url: URL(string: UIApplication.openSettingsURLString))
-        break
+            break
         case .restricted:
-        break
+            break
         case .notDetermined:
-        locationManager.requestWhenInUseAuthorization()
-       
+            locationManager.requestWhenInUseAuthorization()
+            
         }
     }
     
@@ -117,7 +117,7 @@ class MapViewController: UIViewController {
         alert.addAction(cancelAction)
         
         present(alert, animated: true, completion: nil)
-        }
+    }
     
     
 }
@@ -130,14 +130,14 @@ extension MapViewController: CLLocationManagerDelegate{
     }
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
         checkAutorization()
-}
-
+    }
+    
 }
 
 extension MKMapView {
     func centerLocation(_ location: CLLocation, regionRadius: CLLocationDistance = 2000) {
         let coordinateRegion = MKCoordinateRegion(center: location.coordinate, latitudinalMeters: regionRadius, longitudinalMeters: regionRadius)
         setRegion(coordinateRegion, animated: false)
-}
-
+    }
+    
 }
