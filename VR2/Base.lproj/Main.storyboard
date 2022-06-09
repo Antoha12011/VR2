@@ -25,6 +25,10 @@
                                     <navigationItem title="Контакты" largeTitleDisplayMode="always" id="mFx-zi-iNU"/>
                                 </items>
                             </navigationBar>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Profile" translatesAutoresizingMaskIntoConstraints="NO" id="qor-nP-D5i">
+                                <rect key="frame" x="143" y="126" width="129" height="178"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="WSy-o1-wNT"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -265,6 +269,7 @@
         <segue reference="ywc-Ua-qSz"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="Profile" width="1558" height="2160"/>
         <image name="doc.fill" catalog="system" width="115" height="128"/>
         <image name="location.fill" catalog="system" width="128" height="121"/>
         <image name="questionmark.circle.fill" catalog="system" width="128" height="121"/>

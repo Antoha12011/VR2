@@ -12,43 +12,50 @@ class MapViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-   // Расстановка точек на карте
-    let annontation = MKPointAnnotation()
+        
+        // Расстановка точек на карте
+        
+        let annontation = MKPointAnnotation()
         annontation.coordinate = CLLocationCoordinate2D (latitude: 45.0663, longitude: 39.0047)
         annontation.title = "Гарантия на Карякина"
         
         mapView.addAnnotation(annontation)
         
-    let annontation2 = MKPointAnnotation()
-            annontation2.coordinate = CLLocationCoordinate2D (latitude: 45.0622, longitude: 39.0092)
-            annontation2.title = "Кубанский"
+        let annontation2 = MKPointAnnotation()
+        annontation2.coordinate = CLLocationCoordinate2D (latitude: 45.0622, longitude: 39.0092)
+        annontation2.title = "Кубанский"
         
-            mapView.addAnnotation(annontation2)
+        mapView.addAnnotation(annontation2)
         
-    let annontation3 = MKPointAnnotation()
-            annontation3.coordinate = CLLocationCoordinate2D (latitude: 45.0976, longitude: 39.0020)
-            annontation3.title = "ЖК Лучший"
-
-            mapView.addAnnotation(annontation3)
+        let annontation3 = MKPointAnnotation()
+        annontation3.coordinate = CLLocationCoordinate2D (latitude: 45.0976, longitude: 39.0020)
+        annontation3.title = "ЖК Лучший"
         
-    let annontation4 = MKPointAnnotation()
-            annontation4.coordinate = CLLocationCoordinate2D (latitude: 45.0911, longitude: 39.0115)
-            annontation4.title = "Оникс"
-
-            mapView.addAnnotation(annontation4)
+        mapView.addAnnotation(annontation3)
         
-    let annontation5 = MKPointAnnotation()
-            annontation5.coordinate = CLLocationCoordinate2D (latitude: 45.0622, longitude: 38.9624)
-            annontation5.title = "Тургенев"
-
-            mapView.addAnnotation(annontation5)
+        let annontation4 = MKPointAnnotation()
+        annontation4.coordinate = CLLocationCoordinate2D (latitude: 45.0911, longitude: 39.0115)
+        annontation4.title = "Оникс"
         
-    let annontation6 = MKPointAnnotation()
-            annontation6.coordinate = CLLocationCoordinate2D (latitude: 45.0559, longitude: 38.9982)
-            annontation6.title = "Сказка"
-
-            mapView.addAnnotation(annontation6)
+        mapView.addAnnotation(annontation4)
+        
+        let annontation5 = MKPointAnnotation()
+        annontation5.coordinate = CLLocationCoordinate2D (latitude: 45.0622, longitude: 38.9624)
+        annontation5.title = "Тургенев"
+        
+        mapView.addAnnotation(annontation5)
+        
+        let annontation6 = MKPointAnnotation()
+        annontation6.coordinate = CLLocationCoordinate2D (latitude: 45.0559, longitude: 38.9982)
+        annontation6.title = "Сказка"
+        
+        mapView.addAnnotation(annontation6)
+        
+        let annontation7 = MKPointAnnotation()
+        annontation.coordinate = CLLocationCoordinate2D (latitude: 45.0469, longitude: 38.9808)
+        annontation.title = "ЖК Большой"
+        
+        mapView.addAnnotation(annontation7)
         
     }
     override func viewDidAppear(_ animated: Bool) {
@@ -73,7 +80,7 @@ class MapViewController: UIViewController {
             checkAutorization()
             
         } else {
-
+            
             showAllertLocation(title: "У вас выключена служба геолокации", message: "Чтобы включить перейдите в настройки", url: URL (string: "App-prefs:root = LOCATION_SERVICES"))
             
         }
@@ -98,7 +105,7 @@ class MapViewController: UIViewController {
             break
         case .notDetermined:
             locationManager.requestWhenInUseAuthorization()
-            
+        default: break // Добавил чтобы убрать ворнинг
         }
     }
     
