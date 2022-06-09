@@ -15,47 +15,47 @@ class MapViewController: UIViewController {
         
         // Расстановка точек на карте
         
-        let annontation = MKPointAnnotation()
-        annontation.coordinate = CLLocationCoordinate2D (latitude: 45.0663, longitude: 39.0047)
-        annontation.title = "Гарантия на Карякина"
+        let complex = MKPointAnnotation()
+        complex.coordinate = CLLocationCoordinate2D (latitude: 45.0663, longitude: 39.0047)
+        complex.title = "Гарантия на Карякина"
         
-        mapView.addAnnotation(annontation)
+        mapView.addAnnotation(complex)
         
-        let annontation2 = MKPointAnnotation()
-        annontation2.coordinate = CLLocationCoordinate2D (latitude: 45.0622, longitude: 39.0092)
-        annontation2.title = "Кубанский"
+        let complex2 = MKPointAnnotation()
+        complex2.coordinate = CLLocationCoordinate2D (latitude: 45.0622, longitude: 39.0092)
+        complex2.title = "Кубанский"
         
-        mapView.addAnnotation(annontation2)
+        mapView.addAnnotation(complex2)
         
-        let annontation3 = MKPointAnnotation()
-        annontation3.coordinate = CLLocationCoordinate2D (latitude: 45.0976, longitude: 39.0020)
-        annontation3.title = "ЖК Лучший"
+        let complex3 = MKPointAnnotation()
+        complex3.coordinate = CLLocationCoordinate2D (latitude: 45.0976, longitude: 39.0020)
+        complex3.title = "ЖК Лучший"
         
-        mapView.addAnnotation(annontation3)
+        mapView.addAnnotation(complex3)
         
-        let annontation4 = MKPointAnnotation()
-        annontation4.coordinate = CLLocationCoordinate2D (latitude: 45.0911, longitude: 39.0115)
-        annontation4.title = "Оникс"
+        let complex4 = MKPointAnnotation()
+        complex4.coordinate = CLLocationCoordinate2D (latitude: 45.0911, longitude: 39.0115)
+        complex4.title = "Оникс"
         
-        mapView.addAnnotation(annontation4)
+        mapView.addAnnotation(complex4)
         
-        let annontation5 = MKPointAnnotation()
-        annontation5.coordinate = CLLocationCoordinate2D (latitude: 45.0622, longitude: 38.9624)
-        annontation5.title = "Тургенев"
+        let complex5 = MKPointAnnotation()
+        complex5.coordinate = CLLocationCoordinate2D (latitude: 45.0622, longitude: 38.9624)
+        complex5.title = "Тургенев"
         
-        mapView.addAnnotation(annontation5)
+        mapView.addAnnotation(complex5)
         
-        let annontation6 = MKPointAnnotation()
-        annontation6.coordinate = CLLocationCoordinate2D (latitude: 45.0559, longitude: 38.9982)
-        annontation6.title = "Сказка"
+        let complex6 = MKPointAnnotation()
+        complex6.coordinate = CLLocationCoordinate2D (latitude: 45.0559, longitude: 38.9982)
+        complex6.title = "Сказка"
         
-        mapView.addAnnotation(annontation6)
+        mapView.addAnnotation(complex6)
         
-        let annontation7 = MKPointAnnotation()
-        annontation.coordinate = CLLocationCoordinate2D (latitude: 45.0469, longitude: 38.9808)
-        annontation.title = "ЖК Большой"
+        let complex7 = MKPointAnnotation()
+        complex7.coordinate = CLLocationCoordinate2D (latitude: 45.0469, longitude: 38.9808)
+        complex7.title = "ЖК Большой"
         
-        mapView.addAnnotation(annontation7)
+        mapView.addAnnotation(complex7)
         
     }
     override func viewDidAppear(_ animated: Bool) {
