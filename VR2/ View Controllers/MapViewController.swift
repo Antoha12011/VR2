@@ -1,5 +1,4 @@
 
-
 import UIKit
 import MapKit
 import CoreLocation
@@ -56,6 +55,12 @@ class MapViewController: UIViewController {
         complex7.title = "ЖК Большой"
         
         mapView.addAnnotation(complex7)
+        
+        let complex8 = MKPointAnnotation()
+        complex8.coordinate = CLLocationCoordinate2D (latitude: 45.0114, longitude: 39.0697)
+        complex8.title = "Феникс"
+        
+        mapView.addAnnotation(complex8)
         
     }
     override func viewDidAppear(_ animated: Bool) {
