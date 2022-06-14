@@ -18,6 +18,7 @@ class MapViewController: UIViewController {
         complex.coordinate = CLLocationCoordinate2D (latitude: 45.0663, longitude: 39.0047)
         complex.title = "Гарантия на Карякина"
         
+        
         mapView.addAnnotation(complex)
         
         let complex2 = MKPointAnnotation()
@@ -104,7 +105,7 @@ class MapViewController: UIViewController {
             locationManager.startUpdatingLocation()
             break
         case .denied:
-            showAllertLocation(title: "Вы запретили использование местоположения", message: "Хоите это изменить?", url: URL(string: UIApplication.openSettingsURLString))
+            showAllertLocation(title: "Вы запретили использование местоположения", message: "Хотите это изменить?", url: URL(string: UIApplication.openSettingsURLString))
             break
         case .restricted:
             break

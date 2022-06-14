@@ -22,7 +22,6 @@ class TwoTableViewController: UITableViewController, UISearchBarDelegate {
         
     }
     
-    
     override func numberOfSections(in tableView: UITableView) -> Int {
         
         return 1
@@ -33,6 +32,7 @@ class TwoTableViewController: UITableViewController, UISearchBarDelegate {
         return filteredData.count
     }
     
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell")! as UITableViewCell
@@ -42,7 +42,8 @@ class TwoTableViewController: UITableViewController, UISearchBarDelegate {
         return cell
     }
     
-    // Этот код отвечает за работу поисковика
+    
+    /// Этот код отвечает за работу поисковика
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         
@@ -62,6 +63,21 @@ class TwoTableViewController: UITableViewController, UISearchBarDelegate {
         }
         self.tableView.reloadData()
     }
+    
+    /// Работа с сигвеем
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        _ = article[indexPath.row]
+        
+        performSegue(withIdentifier: "detail", sender: article)
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "detail" {
+            
+        }
+    }
+    
 }
 
 

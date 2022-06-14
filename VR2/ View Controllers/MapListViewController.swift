@@ -64,6 +64,20 @@ class MapListViewController: UITableViewController, UISearchBarDelegate {
         }
         self.tableView.reloadData()
     }
+    
+    /// Работа сигвея
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        _ = complex[indexPath.row]
+        
+        performSegue(withIdentifier: "complex", sender: complex)
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "complex" {
+            
+        }
+    }
 }
 
 
