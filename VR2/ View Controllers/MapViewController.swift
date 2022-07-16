@@ -72,7 +72,9 @@ class MapViewController: UIViewController {
         mapView.centerLocation(initiaLocation)
         
         let cameraCenter = CLLocation(latitude: 45.0402, longitude: 38.9756)
+        
         // Ограничение камеры по удалению
+        
         let region = MKCoordinateRegion(center: cameraCenter.coordinate, latitudinalMeters: 20000, longitudinalMeters: 20000)
         mapView.setCameraBoundary(MKMapView.CameraBoundary(coordinateRegion: region), animated: true)
         
@@ -111,7 +113,7 @@ class MapViewController: UIViewController {
             break
         case .notDetermined:
             locationManager.requestWhenInUseAuthorization()
-        default: break // Добавил чтобы убрать ворнинг
+        default: break 
         }
     }
     
