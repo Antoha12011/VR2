@@ -29,7 +29,7 @@ class MapViewController: UIViewController {
         
         let complex3 = MKPointAnnotation()
         complex3.coordinate = CLLocationCoordinate2D (latitude: 45.0976, longitude: 39.0020)
-        complex3.title = "ЖК Лучший"
+        complex3.title = "Лучший"
         
         mapView.addAnnotation(complex3)
         
@@ -53,13 +53,13 @@ class MapViewController: UIViewController {
         
         let complex7 = MKPointAnnotation()
         complex7.coordinate = CLLocationCoordinate2D (latitude: 45.0469, longitude: 38.9808)
-        complex7.title = "ЖК Большой"
+        complex7.title = "Большой"
         
         mapView.addAnnotation(complex7)
         
         let complex8 = MKPointAnnotation()
-        complex8.coordinate = CLLocationCoordinate2D (latitude: 45.0114, longitude: 39.0697)
-        complex8.title = "Феникс"
+        complex8.coordinate = CLLocationCoordinate2D (latitude: 45.0935, longitude: 38.9042)
+        complex8.title = "Самолёт"
         
         mapView.addAnnotation(complex8)
         
