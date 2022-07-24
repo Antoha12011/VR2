@@ -49,6 +49,7 @@ class MapListViewController: UITableViewController, UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         
         
+        
         filteredData = []
         
         if searchText == "" {
